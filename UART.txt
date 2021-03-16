@@ -1,0 +1,24 @@
+=================================UART==========================
+
+--> Its a Full duplex 
+--> Its peer to peer commn
+
+==> Data format/bit frame
+    --> Its 10 bit data format ==> 1 start bit 8 data bit 1 stop bit
+    --> Some times its 11 bit format ==> 1 start bit, 8 data bit, 1 parity bit, 1 stop bit ==> parity bit is used for error frame detection
+                                                  --> If Parity bit is set 1 and data byte frame should contain odd numbers of 1's
+                                                  --> If Parity bit is set 0 and data byte frame should contain evn numbers of 1's  
+    --> Older UART devices are slow in data communication then the UART uses two stop bits at each data transmission, just the RX devices gets ready for communication
+
+
+==> Bit frame structure
+            --> start,8 bit data,stop bit
+            --> start bit ==> Its pulls the Tx line low 1010 1000
+            --> 8 bit data ==> LSB to MSB ==> 0xA8 ==> 00010101
+            --> stop bit --> it release the Tx line to high
+         complete flow ==>  0 00010101 1 
+ 
+ 
+ 
+            
+         
