@@ -1,0 +1,56 @@
+void my_strcpy(char *p, char *s)
+{
+    while(*p++ = *s++);
+}
+
+
+int my_strlen(char *s)
+{
+    int len = 0;
+    while(*s)
+    {
+        len++;
+        s++;
+    }
+    return len;
+}
+
+void my_strrev(char *s)
+{
+    if(*s)
+    {
+        my_strrev(s+1);
+        printf("%c",*s);
+    }
+}
+
+void my_strcmp(char *s,char *p)
+{
+    int flag = 0;
+    while(*s && *p)
+    {
+        if(*s != *p)
+        {
+            flag = 1;
+            break;
+        }
+        s++;
+        p++;
+    }
+    if(flag == 1)
+        printf("strings are not equal");
+    else
+        printf("strings are equal");
+}
+
+
+void my_strcat(char *s,char *p)
+{
+    while(*s)
+    {
+        s++;
+    }
+    while(*s++ = *p++);
+}
+
+

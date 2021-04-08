@@ -1,0 +1,110 @@
+Go through the below topics for syntax and understading the usage:
+
+what are the Data types?
+Int char float and double
+	--> size of char is 1 byte
+	--> size of Int is 4 bytes
+	--> size of float 4 bytes
+	--> size of double is 8 bytes
+
+what is Modifiers and Qualifiers?
+	--> size modifiers and sign modifiers
+		eg: size --> short and long
+		eg: sign --> signed and unsigned 
+
+what is volatile and const?
+	The value once assigned to a varaible we cant change that vlaue is called constant
+	The variable may change at any time in a program,It will tell the compiler not optimize 
+
+
+Can a variable be both volatile and constant?
+Yes
+
+Storage classes?
+	--> auto , static, extern and register 
+	auto : scope within the block, default value : garbage, stored in stack
+	static: within the file, default value is 0, it will keep record of previous value, stored in data segment if its 0 then uninit section
+	extern : This helps to access the global variable throught the program, default value 0, stored in data segment
+	register : For fstaer acccessing will use register, it will stored in CPU registers instead of RAM, default value is  garbage, we cant use & with regsier 
+
+
+Memory segments
+	cmdline args, stack(paramets,local variable and return param), space, Heap, Data segments(.bss(Unint), Init), code segments
+
+
+compilation steps?
+	Preprocessor, compiler, assembler(.s), linker and loader
+
+Types of I/O? 
+Inputs:Scanf,getchar,fgets,gets
+Output: Printf,putchar,fputs,puts
+
+
+Operators?
+
+Unary ++,--
+Binary: a + b
+Ternary: (a & b) ? a = c : b = c;
+
+--> arithmatic(+,-,*,/,%)
+--> logical (&&, ||, !)
+--> relational(<=, >=, <, >, != ==)
+--> Assignment (=, +=, -=, *=, /=, %=, <<=, >>=)
+--> Bitwise (&, |, ^, ~, <<, >>)
+
+Conersion: Dec to Hex, Hex to Dec, Bin to Dec, Dec to Bin, Hex to Bin, Bin to Hex
+Dec to Hex:
+	--> Decimal 16 ==> 16 / 16 ==> 0x10
+	--> Decimal 80 ==> 81 / 16 ==> 0x51 
+Hex to Dec :
+	--> 0x51 ==> (5*16^1) + (1*16^0) ==> 80 + 1 ==> 81
+	--> 0x20 ==> (2*16^1) + (0*16^0) ==> 32 + 0 ==> 32
+
+Conditional statements?
+--> If and else
+--> if elseif and else
+--> switch()
+
+loops?
+--> for
+--> while
+--> do while()
+
+Functions? Recursive functions?Inline function
+--> Executing the some piece of code is called function
+--> The function calling itself is called recursive function
+--> The compiler will subtitute the inline func def wherever it called not like normal function call 
+
+Bitwise operators?
+
+Array: Set of similar data type 
+
+Pointers: Basic, Pointer with arrays and functions
+strings : set of similar characters terminated by null 
+
+Dynamic memory allocation?
+Preprocessor
+structure, Unions, Typedef, bitfields?
+
+
+Some advance topics on C:
+--> 2D-array with dynamic mem alloc
+--> Searching and sorting
+
+
+Basic:
+--> what is pointer?
+--> what is dangling pointer?
+--> what is what is memory leak?
+--> what is const pointer and pointer to const
+--> *p++, *(p++), (*p)++, *(++p), ++*p
+--> Malloc,calloc realloc
+--> what is segmentation fault
+--> what is lvalue required with example
+
+Advance:
+what is array of pointers?
+what is pointer to array?
+
+what is function pointer?(pointer to function)
+what is function returning pointer? 

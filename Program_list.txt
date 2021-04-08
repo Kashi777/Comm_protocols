@@ -1,0 +1,76 @@
+Basic:
+--> Even or odd
+	Num % 2 == 0 even else oddd
+--> Prime num, print Prime num from 0 to N
+	Is prime:
+		loop: i = 2 to sqrt(num) 
+			num % i == 0
+			flag
+			break;
+		print prime or not
+	
+--> Leap year ==> num % 4 == 0 || num % 400 = 0 && num % 100 != 0
+
+--> Factorial ==> 5! ==> 5 * 4 * 3 * 4 * 2 * 1 == > 120
+ 
+--> Fibbonacci, Print Fibb upto N 
+	Fibb ==> 1,1,2,3,5,8,13 if n == 10 ==> 1,1,2,3,5,8 
+
+--> Palindrome==> 121 == 121
+
+--> add digits of num 1234 => 10
+
+--> print n natural numbers
+
+--> sqaure of N natural numbers, Cube
+
+--> multiply two number without using * operator
+
+--> reverse the number
+
+--> Check if n is power of N or not
+
+Loops: Pyramid
+
+
+
+strings:
+--> strlen
+--> strcpy
+--> strrev (using rec, fun)
+--> strcmp
+--> strcat
+--> strstr
+--> strtok
+
+
+array:
+--> search
+--> sort
+--> delete_duplicates using array 
+--> remove freq characters
+
+--> MACRO programs (send ++ with value)
+--> bitwise programs
+	--> set bit, clear bit
+
+what is the dfifference bitween typedef and Macro?
+	--> Macro will replace the values what we have used in program eg: #define val 5 ==> In program will use val not the 5
+	--> In typedef will use the new type the program will replace the original type eg: typedef unsigned int Uint ==> In program will use Uint, program will replace the  original data type 
+
+
+--> structure and union, padding, packing, some programs 
+
+--> enum and bitfields
+	--> Enum is used assign integer const -==> 4byte in size
+		enum week{sun, mon......sat};
+	--> Bit fields: assign in struct eg==> struct stru {
+					unsigned int d : 5;
+
+--> inline function and MACRO difference
+	--> basically inline function are parsed by compiler and Macro expanded by preprocessor
+		--> Inline : It execute the fun but keeps the param values as it is  
+		--> Macro: In macro it evaluate and replaces the latest value in program
+--> what is difference between character array and string
+
+--> threads 
