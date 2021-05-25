@@ -82,5 +82,3 @@ what is the dfifference bitween typedef and Macro?
 
 
 
-
-This is makadchap
