@@ -74,3 +74,13 @@ what is the dfifference bitween typedef and Macro?
 --> what is difference between character array and string
 
 --> threads 
+
+
+
+
+
+
+
+
+
+This is makadchap
