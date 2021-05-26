@@ -1,0 +1,29 @@
+what is process?
+Process means any program in execution. Wont share memory, each process has seprate memeory space.
+
+what is thread?
+Thread is a segment of process, one process has multiple threads.Threads helps in shared memeory tasks.
+
+what is multithreading?
+Devide the process into smaller tasks and run parrallel to achive the performance.
+ 
+whar is Scheduling?
+Allocating as cpu to task or thread.eg: Moving the task from ready to running state
+
+what is priority invertion?
+
+what is Queue?
+
+what is Mutex?
+Mutex is the process to syncronize the task by shared resourse, in general locking mechanism
+
+
+what is Semaphore?
+Providing the proper resourcses to indidual tasks by dividing the resourse equally,its signalling mechnism, which works on wait and signal mechnism 
+
+what is starvation?
+The lower priority task kept in waiting for longer time that is called starvation
+
+what is Deadlock?
+If two running process are waiting the resource aquired by one other that will be in locking state that is called as Deadlock 
+

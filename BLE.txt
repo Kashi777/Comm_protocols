@@ -1,0 +1,50 @@
+How BLE connection happens:
+--> the peripheral devices start advertising and send a connectable advertisment packets 
+--> Central device needs be scanning for the advertisements while peripheral is advertising
+--> Central devices happens tobe listening on advertisng channels then central discover the peripheral and able to read necessory inforamation in order tp establish a connection
+--> Central sends a connection request 
+--> Peripheral always listens for a short interval of time after it sends out the advertisement packets, this helps to receive a connection request from central and which triggers to form a connection
+
+
+Coonectiomn Parameters:
+what is connection interval?
+The interval between two connected BLE devices wakes up the radio and exchange the data
+
+what is slave latency?
+This value helps to skip the consecutive connection events and not listens to the central at these connection events without compromising the connection.
+
+Supervision timeout?
+The max time between two received data packets before the connection considered to be lost.
+
+
+what is GAP?
+It is the framework which tells the behavior of BLE device
+	eg: Roles of BLE devices, advertiments, connection establishment, security
+	
+what is GATT:
+which tells how data exachange between BLE devices
+
+what is Attribute:
+	Generic term for any type of data exposed by the server, which defines the structure fo data.
+	services and characteristics are Attribute
+
+what is Service:
+	Group of one or more attribute(some of which are characteristics). Group of attribute for satisfying the specific functionality on the server.
+	eg: Battery service
+
+what is chaaracteristics:
+	It is a part of service, it will tell that how the data is exposed to client(Tx or Rx)
+	eg: battery level in battery service
+
+Types of characteristics:
+--> Commands : Sent by the client to server, it does not require response form the server, eg: write command 
+--> Request : Sent by the client to server, it requires a response from server. Eg: write request and read request.
+--> Response : Sent by the server in response to a request. 
+--> Notification : Sent by the server to client to let the value has been changed and for this the client need to be set the notification enable and this does not require a response from the client 
+--> Indication : Same like notification but requires a ack from client to server
+	Client characteristic configuration descriptor (CCCD) ==> 1 ==> Notification enable
+	Client characteristic configuration descriptor (CCCD) ==> 2 ==> Indication enable
+	Client characteristic configuration descriptor (CCCD) ==> 0 ==> Disable both 
+--> confirmation : sent by the client to server, these are the ack for indication.
+
+
